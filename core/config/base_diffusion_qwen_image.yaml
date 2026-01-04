@@ -7,8 +7,8 @@ config:
     device: cuda
     network:
       type: lora
-      linear: 128
-      linear_alpha: 128
+      linear: 64
+      linear_alpha: 64
     save:
       dtype: bf16
       save_every: 250

@@ -1,21 +1,21 @@
 # Unique task identifier
-TASK_ID="9a877904-5fe9-402a-8c75-be5eb1b51f7e"
+TASK_ID="74f78351-29a5-481e-aacb-8f42aab3f437"
 
 # Base model to fine-tune (from HuggingFace)
-MODEL="zenless-lab/sdxl-anima-pencil-xl-v5"
+MODEL="OnomaAIResearch/Illustrious-xl-early-release-v0"
 
 # Dataset ZIP file location (must be a ZIP file with images)
-DATASET_ZIP="s3://your-bucket/path/to/image_dataset.zip"
+DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/e83c5ec298dfac65_test_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260101%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260101T161646Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d59da50b84d1b361068a4ba7562b5d49e1f5f57c175c2212fc6cbc45022419d5"
 
 # Model type: "sdxl" or "flux"
 MODEL_TYPE="sdxl"
 
 # Optional: Repository name for the trained model
-EXPECTED_REPO_NAME="my-sdxl-finetuned"
+EXPECTED_REPO_NAME="74f78351-29a5-481e-aacb-8f42aab3f437"
 
 # For uploading the outputs
-HUGGINGFACE_TOKEN="Your Huggingface Token"
-HUGGINGFACE_USERNAME="Your Huggingface Username"
+HUGGINGFACE_TOKEN="your_hf_token_here"
+HUGGINGFACE_USERNAME="Gege24"
 EXPECTED_REPO_NAME="imagetest"
 LOCAL_FOLDER="/app/checkpoints/$TASK_ID/$EXPECTED_REPO_NAME"
 
