@@ -15,8 +15,8 @@ EXPECTED_REPO_NAME="74f78351-29a5-481e-aacb-8f42aab3f437"
 
 # For uploading the outputs
 HUGGINGFACE_TOKEN="your_hf_token_here"
-HUGGINGFACE_USERNAME="Gege24"
-EXPECTED_REPO_NAME="imagetest"
+HUGGINGFACE_USERNAME=""
+EXPECTED_REPO_NAME=""
 LOCAL_FOLDER="/app/checkpoints/$TASK_ID/$EXPECTED_REPO_NAME"
 
 CHECKPOINTS_DIR="$(pwd)/secure_checkpoints"
