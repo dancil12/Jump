@@ -2,7 +2,7 @@
 TASK_ID="74f78351-29a5-481e-aacb-8f42aab3f437"
 
 # Base model to fine-tune (from HuggingFace)
-MODEL="OnomaAIResearch/Illustrious-xl-early-release-v0"
+MODEL="stablediffusionapi/protovision-xl-v6.6"
 
 # Dataset ZIP file location (must be a ZIP file with images)
 DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/e83c5ec298dfac65_test_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260101%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260101T161646Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d59da50b84d1b361068a4ba7562b5d49e1f5f57c175c2212fc6cbc45022419d5"

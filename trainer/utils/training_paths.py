@@ -18,7 +18,12 @@ def get_image_base_model_path(model_id: str) -> str:
         files = [f for f in os.listdir(base_path) if os.path.isfile(os.path.join(base_path, f))]
         if len(files) == 1 and files[0].endswith(".safetensors"):
             return os.path.join(base_path, files[0])
-    return base_path
+        
+        # Check if it is a valid diffusers folder
+        if os.path.exists(os.path.join(base_path, "model_index.json")):
+            return base_path
+    
+    return model_id
 
 def get_image_training_images_dir(task_id: str) -> str:
     return str(Path(train_cst.IMAGE_CONTAINER_IMAGES_PATH) / task_id / "img")
